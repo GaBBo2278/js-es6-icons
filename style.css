@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 42px;
+    float: left;
+    color: rgb(37, 161, 212);
+    font-family: 'Press Start 2P', cursive;
+    padding-top: 1.5rem;
+}
+
+.header-top::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    background-color: rgb(37, 161, 212);
+}
+
+.header-bottom span {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 1rem;
+}
+
+.container {
+    height: calc(100vh - 155px);
+    background-color: lightgrey;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 50px;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 6);
+    height: 100px;
+    border: 3px solid black;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+.icon i {
+    font-size: 40px;
+}
